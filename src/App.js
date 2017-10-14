@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 //Components
 import Header from './components/headerComponent/header';
 import Footer from './components/footerComponent/footer';
 import Homepage from './components/pages/homepage';
+import Cabincrew from './components/pages/cabincrew';
+import Mechanics from './components/pages/mechanics';
 
 //Others
 import './assets/css/default.min.css'
@@ -11,11 +14,15 @@ import './assets/css/default.min.css'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Homepage />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/cabincrew' component={Cabincrew} />
+            <Route exact path='/mechanics' component={Mechanics} />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
