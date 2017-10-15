@@ -5,36 +5,36 @@ $darkgrey: #333;
 $red: #ff1755;
 
 @mixin translateY($e) {
-	-webkit-transform: translateY($e);
-	-moz-transform: translateY($e);
-	-transform: translateY($e);
+    -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+    -transform: translateY($e);
 }
 
 @mixin transitions($e) {
-	-webkit-transition: $e;
-	-moz-transition: $e;
-	-transition: $e;
+    -webkit-transition: $e;
+    -moz-transition: $e;
+    -transition: $e;
 }
 
 body {
-	font-size: 10px;
-	color: $black;
-	font-weight: 400;
-	font-style: normal;
+    font-size: 10px;
+    color: $black;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
-	text-decoration: none;
-	@include transitions(.4s ease-in-out);
-	cursor: pointer;
+    text-decoration: none;
+    @include transitions(.4s ease-in-out);
+    cursor: pointer;
 }
 
 a:hover {
-	color: $red;
-	@include transitions(.4s ease-in-out);
+    color: $red;
+    @include transitions(.4s ease-in-out);
 }
 
 .container-fluid {
-	line-height: 24px;
+    line-height: 24px;
 }
 

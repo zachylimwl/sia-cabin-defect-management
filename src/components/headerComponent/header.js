@@ -6,20 +6,20 @@ class Header extends Component {
     return (
       <header>
         <div className="logo">
-        	LOGO
+            LOGO
         </div>
         <nav>
-        	<ul>
-        		<li className="first">
-        			<Link to="/" >Home</Link>
-        		</li>
-        		<li>
-        			<Link to="/cabincrew">Cabin Crew</Link>
-        		</li>
-        		<li className="last">
-        			<Link to="mechanics">Mechanics</Link>
-        		</li>
-        	</ul>
+            <ul>
+                <li className="first">
+                    <Link to="/" >Home</Link>
+                </li>
+                <li>
+                    <Link to="/cabincrew">Cabin Crew</Link>
+                </li>
+                <li className="last">
+                    <Link to="mechanics">Mechanics</Link>
+                </li>
+            </ul>
         </nav>
       </header>
     );
